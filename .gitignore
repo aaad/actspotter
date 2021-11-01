@@ -130,4 +130,5 @@ dmypy.json
 
 # test and build scripts
 actspotter/test.py
+test.py
 scripts/
