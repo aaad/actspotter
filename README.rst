@@ -7,7 +7,7 @@ The following classes are available: `none, pull_up_down, pull_up_none, pull_up_
 
 The package is currently in early development.
 
-.. image:: /assets/screenshot_1.png
+.. image:: assets/screenshot_1.png
     :alt: Classification of pull-ups.
     :targettext: https://de.wikipedia.org/wiki/Datei:Navy-seal-buds-training-push-ups.ogv
 
