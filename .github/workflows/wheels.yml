@@ -45,7 +45,16 @@ jobs:
       - name: Build sdist
         run: python setup.py sdist
 
-      - uses: actions/upload-artifact@v2
+      - name: Package model
+        run: tar -cvjSf model.tar.bz2 ./actspotter/model
+
+      - name: Upload model
+        uses: actions/upload-artifact@v2
+        with:
+          path: model.tar.bz2
+
+      - name: upload binaries
+        uses: actions/upload-artifact@v2
         with:
           path: dist/*.tar.gz
   upload_pypi:
