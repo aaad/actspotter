@@ -45,16 +45,7 @@ jobs:
       - name: Build sdist
         run: python setup.py sdist
 
-      - name: Package model
-        run: tar -cvjSf model.tar.bz2 ./actspotter/model
-
-      - name: Upload model
-        uses: actions/upload-artifact@v2
-        with:
-          path: model.tar.bz2
-
-      - name: upload binaries
-        uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v2
         with:
           path: dist/*.tar.gz
   upload_pypi:
@@ -71,4 +62,4 @@ jobs:
         with:
           user: __token__
           password: ${{ secrets.pypi_token }}
-          #repository_url: https://test.pypi.org/legacy/ # test url
+          #repository_url: https://test.pypi.org/legacy/ # test
