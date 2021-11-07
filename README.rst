@@ -59,6 +59,10 @@ Windows
 Example Usage
 ~~~~~~~~~~~~~
 
+Requirement: cv2 (opencv) installed.
+
+Classification of images:
+
 .. code:: python
 
     import cv2
@@ -81,6 +85,8 @@ Example Usage
     
     print(class_names)
     print(image_classifier.classify_images(images))
+
+Classification of a video:
 
 .. code:: python
 
