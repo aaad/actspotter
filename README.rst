@@ -3,14 +3,25 @@ Python Library actspotter
 
 The `actspotter` is a library / tensorflow model for detecting activities. It allows to classify body activities in images or videos. The package is limited to videos and images with only one person by design.
 
-The following classes are available: `none, pull_up_down, pull_up_none, pull_up_up, push_up_down, push_up_none, push_up_up`.
+The following classes are available: 
+
+- none
+- pull_up_up
+- pull_up_down
+- pull_up_none
+- push_up_up
+- push_up_down
+- push_up_none
+- sit_up_up
+- sit_up_down
+- sit_up_none
 
 The package is currently in early development.
 
 Future plans
 ~~~~~~~~~~~~~
 
-Tensorflow model deployment will be integrated soon. Currently this package allows to classify push-ups and pull-ups. In future version kicks and others body activities will follow. 
+Tensorflow model deployment will be integrated soon. Currently this package allows to classify push-ups, sit-ups and pull-ups. In future version kicks and others body activities will follow. 
 
 It is also planned to provide a signal processing layer that allows to easily detect connected activites and count them. 
 
